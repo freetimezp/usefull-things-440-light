@@ -1,43 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/vite.svg" type="image/svg+xml" />
-        <link rel="stylesheet" href="./src/assets/css/style.css" />
-        <title>Project</title>
+
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <title>Hidden Fairy</title>
     </head>
 
     <body>
+        <div class="cursor">
+            <div class="cursor-core"></div>
+            <div class="cursor-ring"></div>
+            <div class="cursor-star">✦</div>
+        </div>
+
         <section class="intro">
-            <h1>no light with out dark</h1>
+            <div class="intro-content">
+                <span>01 — THE BEGINNING</span>
+                <h1>There is more<br />than you can see.</h1>
+                <p>Move your cursor slowly.</p>
+            </div>
         </section>
 
-        <section class="spotlight">
-            <div class="lottie-container">
-                <div class="lottie"></div>
-                <div class="fire-glow"></div>
+        <section class="fairy-world">
+            <div class="world-bg"></div>
+
+            <div class="mist mist-1"></div>
+            <div class="mist mist-2"></div>
+
+            <div class="moon"></div>
+
+            <div class="tree tree-left"></div>
+            <div class="tree tree-right"></div>
+
+            <!-- hidden objects -->
+
+            <div class="hidden-object object-moon">
+                <div class="object-glow"></div>
+                <span>☾</span>
             </div>
 
-            <h1>try, can you find something here</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis culpa officia numquam assumenda quibusdam
-                sequi ipsa voluptates, ea est ipsam labore laudantium odit consequuntur, placeat fugiat in eos obcaecati
-                expedita dolore aliquid. Consequuntur, excepturi enim iusto nobis vero cupiditate ex unde provident
-                veritatis molestiae. Aperiam reprehenderit veritatis quo doloremque dolor!
-            </p>
+            <div class="hidden-object object-flower">
+                <div class="object-glow"></div>
+                <span>✿</span>
+            </div>
 
-            <div class="spotlight-mask"></div>
+            <div class="hidden-object object-mushroom">
+                <div class="object-glow"></div>
+                <span>♣</span>
+            </div>
+
+            <div class="hidden-object object-butterfly">
+                <div class="object-glow"></div>
+                <span>🦋</span>
+            </div>
+
+            <div class="hidden-object object-key">
+                <div class="object-glow"></div>
+                <span>♢</span>
+            </div>
+
+            <div class="hidden-object object-star">
+                <div class="object-glow"></div>
+                <span>✦</span>
+            </div>
+
+            <div class="fairy">
+                <div class="fairy-glow"></div>
+                <div class="fairy-wing wing-left"></div>
+                <div class="fairy-wing wing-right"></div>
+                <div class="fairy-body"></div>
+            </div>
+
+            <div class="world-copy">
+                <span>02 — THE HIDDEN WORLD</span>
+
+                <h1>
+                    Try to find<br />
+                    something here.
+                </h1>
+
+                <p>
+                    Some things only appear<br />
+                    when you are looking for them.
+                </p>
+            </div>
+
+            <div class="spotlight"></div>
+
+            <div class="discovery">
+                <span class="discovery-count">0</span>
+                <span>/ 6 discovered</span>
+            </div>
         </section>
 
         <section class="outro">
-            <h1>next content here</h1>
+            <span>03 — AFTER DARK</span>
+            <h1>Keep looking.</h1>
+            <p>There may still be something hiding.</p>
         </section>
 
         <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.13.0/lottie.min.js"></script>
 
-        <script type="module" src="./src/assets/js/main.js"></script>
+        <script type="module" src="./assets/js/main.js"></script>
     </body>
 </html>
